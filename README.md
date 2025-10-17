@@ -3,7 +3,7 @@
 A fully functional 2048 game implemented in React with a colorful GUI.
 
 ## Live Demo
-[Play the game here](YOUR_NETLIFY_URL)
+[Play the game here](https://gleaming-cuchufli-3ec2fc.netlify.app/)
 
 ## Features
 - 4x4 grid (configurable)
