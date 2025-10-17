@@ -30,23 +30,23 @@ npm run dev
 The app can be deployed using Netlify or any static hosting. Build for production:
 npm run build
 
-Implementation Details
+Implementation Details:
 
-Functional React Components for UI
+- Functional React Components for UI
 
-State Management with useState and useEffect
+- State Management with useState and useEffect
 
-Board Logic in game/game.js
+- Board Logic in game/game.js
 
-Board initialization
+  -> Board initialization
+  
+  -> Tile sliding & merging
+  
+  -> Score calculation
+  
+  -> Movement in all directions
 
-Tile sliding & merging
-
-Score calculation
-
-Movement in all directions
-
-CSS Grid for layout and color-coded tiles
+- CSS Grid for layout and color-coded tiles
 
 
 
