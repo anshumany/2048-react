@@ -1,0 +1,70 @@
+body {
+  background: #faf8ef;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+  background: #bbada0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #776e65;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Tile colors by class (works with className={`cell value-${cell}`}) */
+.cell.value-0 { background: #cdc1b4; }
+.cell.value-2 { background: #eee4da; }
+.cell.value-4 { background: #ede0c8; }
+.cell.value-8 { background: #f2b179; color: #f9f6f2; }
+.cell.value-16 { background: #f59563; color: #f9f6f2; }
+.cell.value-32 { background: #f67c5f; color: #f9f6f2; }
+.cell.value-64 { background: #f65e3b; color: #f9f6f2; }
+.cell.value-128 { background: #edcf72; color: #f9f6f2; font-size: 28px; }
+.cell.value-256 { background: #edcc61; color: #f9f6f2; font-size: 28px; }
+.cell.value-512 { background: #edc850; color: #f9f6f2; font-size: 28px; }
+.cell.value-1024 { background: #edc53f; color: #f9f6f2; font-size: 24px; }
+.cell.value-2048 { background: #edc22e; color: #f9f6f2; font-size: 24px; }
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #8f7a66;
+  color: #f9f6f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #776e65;
+}
