@@ -1,16 +1,52 @@
-# React + Vite
+# 2048 React Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional 2048 game implemented in React with a colorful GUI.
 
-Currently, two official plugins are available:
+## Live Demo
+[Play the game here](YOUR_NETLIFY_URL)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- 4x4 grid (configurable)
+- Arrow key movement (up, down, left, right)
+- Merge tiles with the same number
+- Random 2 or 4 tiles after each move
+- Score tracking
+- Game over detection
+- Restart button
 
-## React Compiler
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/2048-react.git
+cd 2048-react
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Install Dependencies
+npm install
 
-## Expanding the ESLint configuration
+3. Start the development server:
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Deployment
+The app can be deployed using Netlify or any static hosting. Build for production:
+npm run build
+
+Implementation Details
+
+Functional React Components for UI
+
+State Management with useState and useEffect
+
+Board Logic in game/game.js
+
+Board initialization
+
+Tile sliding & merging
+
+Score calculation
+
+Movement in all directions
+
+CSS Grid for layout and color-coded tiles
+
+
+
